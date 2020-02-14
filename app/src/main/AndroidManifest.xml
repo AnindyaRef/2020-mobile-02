@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Login"></activity>
+        <activity android:name=".HalamanRegister2"></activity>
+        <activity android:name=".HalamanProfile" />
+        <activity android:name=".HalamanRegister" />
+        <activity android:name=".Login" />
         <activity android:name=".Welcome" />
         <activity android:name=".MainActivity">
             <intent-filter>
