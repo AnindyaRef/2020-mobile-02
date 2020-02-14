@@ -7,6 +7,13 @@
     android:background="#FFFFFF"
     tools:context=".Login">
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
     <ImageView
         android:id="@+id/background"
         android:layout_width="match_parent"
@@ -31,7 +38,6 @@
         android:id="@+id/welcome_text"
         android:layout_width="290dp"
         android:layout_height="80dp"
-        android:layout_marginTop="24dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="Continuing as Service Provider"
         android:textColor="#313131"
@@ -39,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/background" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <Button
         android:id="@+id/button2"
@@ -47,9 +53,10 @@
         android:layout_height="47dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/btn_white_large"
-        android:text="login"
-        android:textColor="#FFFF0000"
         android:fontFamily="@font/futura_pt_demibold"
+        android:text="login"
+        android:textAllCaps="false"
+        android:textColor="#FFFF0000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.167"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,9 +70,9 @@
         android:background="@drawable/btn_red_large"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="User"
+        android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.793"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,9 +84,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
         android:background="@drawable/btn_white_large"
-        android:text="Continue with Google"
         android:fontFamily="@font/futura_pt_demibold"
+        android:text="Continue with Google"
+        android:textAllCaps="false"
         android:textColor="#FFFF0000"
+        android:drawableLeft="@drawable/google_logo"
+        android:paddingLeft="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome_text" />
@@ -90,24 +100,16 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="136dp"
         android:background="@drawable/btn_blue_large"
-        android:text="Continue with Facebook"
-        android:textColor="#FF003366"
         android:fontFamily="@font/futura_pt_demibold"
+        android:text="Continue with Facebook"
+        android:textAllCaps="false"
+        android:textColor="#FF003366"
+        android:drawableLeft="@drawable/fb_logo"
+        android:paddingLeft="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome_text" />
 
-
-    <ImageView
-        android:id="@+id/google"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:src="@drawable/google_logo"
-        app:layout_constraintBottom_toBottomOf="@+id/button3"
-        app:layout_constraintStart_toStartOf="@+id/button3"
-        app:layout_constraintTop_toTopOf="@+id/button3" />
 
     <TextView
         android:id="@+id/enter2"
@@ -122,16 +124,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
 
-    <ImageView
-        android:id="@+id/facebook"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/fb_logo"
-        app:layout_constraintBottom_toBottomOf="@+id/button4"
-        app:layout_constraintEnd_toEndOf="@+id/button4"
-        app:layout_constraintHorizontal_bias="0.044"
-        app:layout_constraintStart_toStartOf="@+id/button4"
-        app:layout_constraintTop_toTopOf="@+id/button4"
-        app:layout_constraintVertical_bias="0.48" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
